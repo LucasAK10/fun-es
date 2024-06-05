@@ -1,6 +1,6 @@
-
+# exportar biblioteca
 import math
-
+# definir os valores de a e b na função do primeiro grau
 def calcular_equacao_primeiro_grau():
     print("Equação do primeiro grau: ax + b = 0")
     a = float(input("Digite o valor de a: "))
@@ -14,13 +14,13 @@ def calcular_equacao_primeiro_grau():
     else:
         x = -b / a
         print("A solução da equação é x =", x)
-
+# definir os valores de a e b na função do segundo grau
 def calcular_equacao_segundo_grau():
     print("Equação do segundo grau: ax² + bx + c = 0")
     a = float(input("Digite o valor de a: "))
     b = float(input("Digite o valor de b: "))
     c = float(input("Digite o valor de c: "))
-    
+# definição de Delta 
     delta = b**2 - 4*a*c
     
     if delta > 0:
@@ -36,7 +36,7 @@ def calcular_equacao_segundo_grau():
         print("As soluções da equação são complexas:")
         print("x1 =", valor_real, "+", valor_imaginario, "i")
         print("x2 =", valor_real, "-", valor_imaginario, "i")
-
+# menu
 def main():
     print("Escolha o tipo de equação que deseja calcular:")
     print("1 - Equação do primeiro grau")
